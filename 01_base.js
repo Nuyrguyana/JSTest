@@ -77,7 +77,7 @@ else {
 }
 
 //тернарное выражение
-isReady ? console.log('все готово') : console.log('не готово')
+!isReady ? console.log('все готово') : console.log('не готово')
 
 
 const num1 = 42 //number
@@ -131,6 +131,9 @@ family[family.length] = 'yasya'
 family[family.length] = 'yana'
 family[family.length-1] = 'yana1'
 console.log(family)
+const member = family.pop()
+console.log(member)
+console.log(family)
 //10 циклы
 
 const cars =['мазда', 'мерседес', 'форд']
@@ -140,6 +143,11 @@ for (let i = 0; i < cars.length; i++) {
     console.log(car)
 //    i++
 }
+
+
+
+
+
 
 for (let car of cars) {
     console.log(car.toUpperCase())
